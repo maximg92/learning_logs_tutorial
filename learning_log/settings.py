@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # My apps.
     'learning_logs',
     'users',
+    'hmpg',
 
     # Third party apps.
     'bootstrap4',
@@ -143,3 +144,6 @@ if os.environ.get('DEBUG') == 'TRUE':
     DEBUG = True
 elif os.environ.get('DEBUG') == 'FALSE':
     DEBUG = False
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
